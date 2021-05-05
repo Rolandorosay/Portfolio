@@ -4,4 +4,4 @@ This is my current portfolio website. I still have many things I want to add to 
 
 I have hidden a small easter egg somewhere on my site. Hopefully you can find it and have a laugh.
 
-Check out my project here:
+Check out my project here: https://rolandorosay.github.io/Portfolio/
