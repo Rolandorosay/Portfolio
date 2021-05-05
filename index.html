@@ -4,6 +4,7 @@
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Rolando Rodriguez - Portfolio Website</title>
+		<link rel="stylesheet" href="contact.html" />
 		<link rel="stylesheet" href="styles.css" />
 		<script src="additional.js"></script>
 		<link
@@ -29,6 +30,10 @@
 		h4 {
 			padding-left: 30px;
 		}
+		#bio {
+			padding-left: 100px;
+			padding-right: 100px;
+		}
 		.row div {
 			padding: 20px 10px;
 			border: 2px;
@@ -45,13 +50,29 @@
 			border-radius: 10px;
 			border: whitesmoke;
 		}
-		.youtube div {
+		#pacman {
+			padding-left: 100px;
+		}
+		#eyes {
+			padding-left: 50px;
+			padding-right: 50px;
+		}
+		#bus {
+			padding-right: 100px;
+		}
+		.btn:hover {
+			background-color: rgb(255, 196, 0);
 		}
 	</style>
 	<body>
-		<nav class="navbar navbar-expand-lg navbar-light bg-light">
+		<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
 			<div class="container-fluid">
-				<a class="navbar-brand" href="#">Rolando Rodriguez</a>
+				<a
+					class="navbar-brand"
+					href="https://www.youtube.com/embed/tgbNymZ7vqY?autoplay=1&mute=1"
+					>Rolando Rodriguez</a
+				>
+
 				<button
 					class="navbar-toggler"
 					type="button"
@@ -68,31 +89,32 @@
 						<li class="nav-item">
 							<a
 								class="nav-link active"
-								aria-current="page"
-								tabindex="-1"
 								href="#"
+								aria-current="page"
+								onclick="window.location.reload()"
 								>Home</a
 							>
 						</li>
+						<!--
 						<li class="nav-item">
 							<a
 								class="nav-link active"
 								href="#"
-								tabindex="-1"
 								aria-current="page"
 								>Projects</a
 							>
 						</li>
+						-->
 						<li class="nav-item">
 							<a
 								class="nav-link active"
-								href="#"
-								tabindex="-1"
+								href="/Users/rolando/Desktop/Portfolio/contact.html"
 								aria-current="page"
 								>Contact</a
 							>
 						</li>
 					</ul>
+
 					<form class="d-flex">
 						<input
 							class="form-control me-2"
@@ -100,6 +122,7 @@
 							placeholder="Search"
 							aria-label="Search"
 						/>
+
 						<button class="btn btn-outline-success" type="submit">
 							Search
 						</button>
@@ -125,23 +148,33 @@
 		</div>
 
 		<h2 class="display-4 text-center py-5 my-4">Featured Projects</h2>
+		<h6 class="text-center">
+			<p>Click on the images to see the projects in action!</p>
+		</h6>
 
 		<div class="row row-cols-1 row-cols-md-3 g-4">
-			<div class="col">
-				<div class="card h-100">
-					<img src="pacman.png" class="card-img-top" alt="..." />
+			<div class="col" id="pacman">
+				<div class="card h-100 shadow p-3 mb-5 bg-body rounded">
+					<a href="https://rolandorosay.github.io/PacMen-Exercise/">
+						<img
+							src="pacman.png"
+							class="card-img-top"
+							role="button"
+							alt="..."
+					/></a>
+
 					<div class="card-body">
 						<h5 class="card-title text-center">PacMen Exercise</h5>
 						<p class="card-text">
-							This is a wider card with supporting text below as a
-							natural lead-in to additional content. This card has
-							even longer content than the first to show that
-							equal height action than the first to show that than
-							the first to show that than the first to show that
-							than the first to show that than the first to show
-							that than the first to show that than the first to
-							show that than the first to show that than the
-							first.
+							This is a factory for making PacMen. When you hit
+							the "Add PacMan" button another PacMan will appear
+							on the screen. To start the game and have the PacMen
+							running around the screen just hit the "Start Game"
+							button. The exercise was created to show how an
+							image can change and run across the screen in random
+							directions and at random speeds. PacMan will bounce
+							around chomping. (still working on getting him to
+							chomp and switch directions)
 						</p>
 					</div>
 					<div class="card-footer">
@@ -151,21 +184,27 @@
 					</div>
 				</div>
 			</div>
-			<div class="col">
-				<div class="card h-100">
-					<img src="eyes.png" class="card-img-top" alt="..." />
+			<div class="col" id="eyes">
+				<div class="card h-100 shadow p-3 mb-5 bg-body rounded">
+					<a href="https://rolandorosay.github.io/Eyes-Exercise/">
+						<img
+							src="eyes.png"
+							class="card-img-top"
+							role="button"
+							alt="..."
+					/></a>
 					<div class="card-body">
 						<h5 class="card-title text-center">Following Eyes</h5>
 						<p class="card-text">
-							This is a wider card with supporting text below as a
-							natural lead-in to additional content. This card has
-							even longer content than the first to show that
-							equal height action than the first to show that than
-							the first to show that than the first to show that
-							than the first to show that than the first to show
-							that than the first to show that than the first to
-							show that than the first to show that than the
-							first.
+							This exercise shows a pair of eyes following you
+							(your mouse) around the screen. I don't know if
+							theres anything else I would want to add to this.
+							Maybe I can add a feature that makes the eys spin
+							around if you circle the mouse around the screen too
+							much. I would also like to add some intense, scary
+							house music so that the user looking at the project
+							gets a sense of urgency. I think this will play well
+							with the concept of what the project is.
 						</p>
 					</div>
 					<div class="card-footer">
@@ -175,23 +214,29 @@
 					</div>
 				</div>
 			</div>
-			<div class="col">
-				<div class="card h-100">
-					<img src="map.jpeg" class="card-img-top" alt="..." />
+			<div class="col" id="bus">
+				<div class="card h-100 shadow p-3 mb-5 bg-body rounded">
+					<a href="https://rolandorosay.github.io/NYC-Bus-Tracker/">
+						<img
+							src="map.jpeg"
+							class="card-img-top"
+							role="button"
+							alt="..."
+					/></a>
 					<div class="card-body">
 						<h5 class="card-title text-center">
 							Cambridge Bus Tracker
 						</h5>
 						<p class="card-text">
-							This is a wider card with supporting text below as a
-							natural lead-in to additional content. This card has
-							even longer content than the first to show that
-							equal height action than the first to show that than
-							the first to show that than the first to show that
-							than the first to show that than the first to show
-							that than the first to show that than the first to
-							show that than the first to show that than the
-							first.
+							This file was named NYC Bus Tracker but what is
+							shown is a bus station map between MIT and Harvard.
+							I have not decided whether to rename the repository
+							or update the files to NYC bus routes. Moving
+							forward I would like to explore different versions
+							of my map. I'd like to do it based on the places
+							I've visited and link photos to each location.
+							(still figuring out how to have names pop up when
+							the bus stop ticker appears)
 						</p>
 					</div>
 					<div class="card-footer">
@@ -202,22 +247,67 @@
 				</div>
 			</div>
 		</div>
+		<!--* Tooltip function - hover over word, image, etc. to get info. about it -->
 		<script>
 			$(function () {
 				$('[data-toggle="tooltip"]').tooltip();
 			});
 		</script>
 		<br />
+		<h2 class="display-5 text-center">Quick Bio</h2>
+		<p class="lead text-center" id="bio">
+			Hey! My name is Rolando Rodriguez and I am an architectural designer
+			and self-taught UI/UX designer. I am learning to code so that I can
+			bring the skills I learned in UI/UX full circle. I am interested in
+			learning how to build apps and websites so that I can build working
+			prototypes before bringing on friends to work with. I enjoy thinking
+			of new ways to solve problems, and I think code will help me be
+			better equipped to do so. Learning code will also open up new
+			opportunities in other interests of mine like machine learning.
+			Using a robotic arm to 3D print furniture or architectural details
+			is just the beginning of it. There are so many possibilities when it
+			comes to machine learning! I'd also like to mention the coding
+			community. Those that I have experienced so far are very involved.
+			Everyone is helping each other and trying to figure out things
+			together. It can be frustrating at times sitting in front of the
+			computer for hours trying to figure out one little aspect needed to
+			elevate your project to the next level, but the community has been
+			quite helpful. Moving forward, I am excited to see all the
+			opportunities learning code brings with it.
+		</p>
 
 		<h2 class="display-4 text-center py-5 my-4">About Me Video</h2>
 
-		<div class="youtube">
+		<!--* Need to find another way of how to center videos -->
+		<!--* Find out how to apply image before video starts-->
+
+		<center>
 			<iframe
-				width="540"
-				height="360"
-				src="https://www.youtube.com/embed/tgbNymZ7vqY?autoplay=1&mute=1"
-			>
-			</iframe>
-		</div>
+				width="560"
+				height="315"
+				src="https://www.youtube.com/embed/tTLgd4cfLTY"
+				title="YouTube video player"
+				frameborder="0"
+				allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+				allowfullscreen
+			></iframe>
+		</center>
+
+		<h4 class="display-6 text-center py-5 my-4">
+			Thank you for checking out my website.
+		</h4>
+		<p class="text-center">
+			Though I'm still learning how to code, I'll be updating my website
+			constantly. Check back if you want to see how much my website
+			changes over time, and if you have any questions, feel free to
+			contact me!
+		</p>
+
+		<footer class="page-footer font-small blue">
+			<div class="footer-copyright text-center py-3">
+				©2021 Copyright: Rolando Rodriguez
+				<!--<a href="https://mdbootstrap.com/"> Rolando Rodriguez</a>-->
+			</div>
+		</footer>
 	</body>
 </html>
